@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- about me ke liye -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <!-- about me ke conent ke liye -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fed92de64d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ------header------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo.png" width="200" height="200" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><h3>Hi! I'm Parth from Nagpur, Maharashtra, <br>a Computer Science Student, IIT Bhilai &nbsp; &nbsp;:)</h3></p>
+        </div>
+      </div>  
+    </div>
+    <!-- ------header------- -->
+
+
+    <!-- -------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                        <img src="images/user.jpeg" width="50" height="800">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, accusantium earum deserunt illo nulla rem officiis vero atque. Iste esse, voluptatem, quo exercitationem tempore inventore iusto cumque cupiditate dicta placeat reiciendis veniam laborum! Dicta esse nemo quibusdam doloremque, inventore reprehenderit fugiat voluptatibus doloribus molestias nulla eos eveniet quae repellendus assumenda itaque! Dolor ullam at laborum! Architecto itaque odit sint porro, ad soluta blanditiis ea voluptates inventore consectetur, similique vero adipisci, et sapiente. Harum dolorem repellendus omnis ipsum consequuntur rem iure dolore, modi architecto ex, ea reiciendis quia molestiae? Odit, quas.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>HTML, CSS and Javascript</li>
+                            <li>IoT, ML (basics)</li>
+                            <li>MySQL</li>
+                            <li>Linux, Git, LaTeX</li>
+                            <li>Video Editing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Amazon ML Summer School <br> July 2022</li>
+                            <li>IoT trainee and intern at Bolt IoT <br> June 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Computer Science, BTech, IIT Bhilai<br> 2020-2024</li>
+                            <li>Sevasadan Junior College of Education, Nagpur<br> 2018-2020 <br>HSC: 91.1%</li>
+                            <li>Bhavan's BP Vidya Mandir, Civil Lines, Nagpur<br> 2014-2018 <br>SSC: 97.4%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------about---------- -->
+
+
+    <!-- ----------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>I am pursuing BTech in Computer Science at IIT Bhilai. I code in Python, though I also know basic C++. I am familiar with Linux, LaTeX, MySQL, and concepts related to OOP, DBMS and OS.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Currently, I have experience only in frontend web development. I am familiar with HTML, CSS and Javascript. I use Canva and Adobe XD for UI Design.</p>
+                    <a href="#">Visit other websites</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h2>Video Editing</h2>
+                    <p>I casually started video editing in my 1st year at IIT Bhilai, and currently know some intermediate level video-editing. I used "Wondershare Filmora" for video editing.</p>
+                    <a href="https://drive.google.com/drive/folders/1wGlByUS2QmrNtqhOn8DvyF9yAhqw_gTC?usp=sharing" target="_blank">View Sample</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services------------- -->
+
+
+    <!-- -----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, earum ducimus!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>My English Mentor VoiceApp</h3>
+                        <p>Have a look at this voice app developed by me which makes learning English on the go way easier and can be operated on our phone's Google Assistant as well as Amazon Alexa, etc. You can ask it for meaning of a word and note it down if you want. You can also translate some English sentences/phrases into some other language. </p>
+                        <a href="https://youtu.be/PAFkf3W09DE" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Messaging App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, earum ducimus!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------portfolio------------ -->
+
+
+    <!-- -----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect!</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>parthkhandenath123@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/parth-khandenath-902993206/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pa_kh039/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2" target="_blank">Download my Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form  name='submit-to-google-sheet'>
+                    <!-- <form method="POST" action="https://script.google.com/macros/s/AKfycbwMYJb-KFgsHiDX7v7KRrJSGDo1XX2vmdas4ccojqjZOwKcAux4hfHZaQlD-nfz4jrXdA/exec"> -->
+                        <input type="text" name="Name" placeholder="Please enter your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message here.... the shorter, the better :)" required></textarea>
+                        <!-- <input type="submit" class="btn btn2" value="Submit"> -->
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- -----------contact------------- -->
+
+
+        <!-- ------------copyright---------- -->
+        <div class="copyright">
+            <p>Dekho magar pyaar <i class="fa-solid fa-heart"></i> se ;)</p>
+        </div>
+        <!-- ------------copyright---------- -->
+
+    </div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for (tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        // removed the active-link from the class of all tab titles
+        for (tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        // removed the active-tab from the class of all tab contents
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // -----------------------------------------
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNwTEBbgMtmJUdHrIhRRmO9F7ivRMcbQ7UZNGvrJAaueEBhtHm0ek1zIsTyIQRv4Me9A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg") 
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
